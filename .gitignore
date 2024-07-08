@@ -1,0 +1,7 @@
+# Ignore files with extension `.exe`
+*.exe
+
+# Ignore `.vscode` dir
+.vscode/
+# or
+*/.vscode/*
