@@ -2,18 +2,19 @@
 
 using namespace std;
 
-bool ZerosAndOnes(string str){
+bool ZerosAndOnes(string str)
+{
     int zero = 0, one = 0;
-    for(auto ch:str){
+    for (auto ch : str)
+    {
         (ch == '0') ? ++zero : ++one;
     }
-    return (zero ==1 || one ==1);
+    return (zero == 1 || one == 1);
 }
-int main(){
-    cout << "Enter String :";
+int main()
+{
     string str;
-    getline(cin,str);
-    ZerosAndOnes(str)?cout<<"Yes": cout<<"No"; 
-
+    getline(cin, str);
+    ZerosAndOnes(str) ? cout << "Yes" : cout << "No";
     return 0;
 }
